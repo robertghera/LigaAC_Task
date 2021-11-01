@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset=utf-8>
+</head>
+<body>
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.square {
+  position: relative;
+  width: 60vmin;
+  background-color: green;
+  box-sizing: border-box;
+  transition:all .9s ease;
+}
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.square:hover {
+	border-radius: 50%;
+	background-color: black;
+}
+</style>
+<div class="container">
+  <div class="square">
+  </div>
+</div>
+</body>
+</html>
